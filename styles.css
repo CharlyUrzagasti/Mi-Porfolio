@@ -150,7 +150,7 @@ section {
     transition: .5s;
 }
 
-.btn-box .btn:hover::before{
+.btn-box .btn:hover::before {
     width: 100%;
 }
 
@@ -215,14 +215,16 @@ section {
     overflow: hidden;
     transition: .5s;
 }
-.home-sci a:hover{
-color: var(--bg-color);
-}
-.home-sci a::before{
 
-    content:" ";
+.home-sci a:hover {
+    color: var(--bg-color);
+}
+
+.home-sci a::before {
+
+    content: " ";
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 0;
     height: 100%;
@@ -230,7 +232,8 @@ color: var(--bg-color);
     z-index: -1;
     transition: .5s;
 }
-.home-sci a:hover::before{
+
+.home-sci a:hover::before {
     width: 100%;
 }
 
@@ -317,7 +320,7 @@ span {
 /* Section Educacion */
 
 
-.educacion{
+.educacion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,31 +328,32 @@ span {
     min-height: auto;
     padding-bottom: 5rem;
 }
-.educacion .educacion-row{
+
+.educacion .educacion-row {
     display: flex;
     flex-wrap: wrap;
-    gap:5rem;
+    gap: 5rem;
 }
 
-.educacion-row .educacion-column{
-   flex: 1 1 40rem; 
+.educacion-row .educacion-column {
+    flex: 1 1 40rem;
 }
 
-.educacion-column .title{
+.educacion-column .title {
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
 }
 
-.educacion-column .educacion-box{
+.educacion-column .educacion-box {
     border-left: .2rem solid var(--main-color);
 }
 
-.educacion-box .educacion-content{
+.educacion-box .educacion-content {
     position: relative;
     padding-left: 2rem;
 }
 
-.educacion-content .content{
+.educacion-content .content {
 
     position: relative;
     padding: 1.5rem;
@@ -359,51 +363,167 @@ span {
     overflow: hidden;
 }
 
-.educacion-content .content .year{
+.educacion-content .content .year {
 
     font-size: 1.5rem;
-    color:var(--main-color);
-    padding-bottom:  .5rem;;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+    ;
 }
 
-.educacion-content .content .year i{
+.educacion-content .content .year i {
     padding-right: .5rem;
 }
 
-.educacion-content .content h3{
+.educacion-content .content h3 {
     font-size: 2rem;
 }
-.educacion-content .content p{
+
+.educacion-content .content p {
     font-size: 1.6rem;
     padding-top: .5rem;
 }
 
-.educacion-box .educacion-content::before{
+.educacion-box .educacion-content::before {
     content: '';
     position: absolute;
-    top:0;
-    left:-1.1rem;
+    top: 0;
+    left: -1.1rem;
     width: 2rem;
     height: 2rem;
     background: var(--main-color);
     border-radius: 50%;
     overflow: hidden;
-    
-    
+
+
 }
 
-.educacion-content .content::before{
+.educacion-content .content::before {
     content: "";
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 0;
     height: 100%;
-    background:var(--second-bg-color);
+    background: var(--second-bg-color);
     z-index: -1;
     transition: .5s;
 }
 
-.educacion-content .content:hover::before{
+.educacion-content .content:hover::before {
     width: 100%;
 }
+
+.skills {
+    min-height: auto;
+    background-color: var(--second-bg-color);
+    padding-bottom: 7rem;
+}
+
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.skills-row .skills-column {
+    flex: 1 1 40rem;
+}
+
+.skills-column .title {
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem
+}
+
+.skills-box .skills-content {
+
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+}
+
+.skills-content .progress {
+    padding: 1rem;
+}
+
+.skills-content .progress h3 {
+
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-content .progress h3 span {
+
+    color: var(--text-color);
+}
+
+.skills-content .progress .bar {
+
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+.skills-content .progress .bar span {
+    height: 100%;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: .3rem;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
+    width: 70%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
+    width: 65%;
+}
+
+
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
+    width: 70%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
+    width: 65%;
+}
+
+
+.skills-box .skills-content::before{
+    content:" ";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background-color: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-box .skills-content:hover::before{
+    width: 100%;
+}
+
