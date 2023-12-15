@@ -645,10 +645,12 @@ span {
 footer {
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     /* flex-wrap: wrap; */
     padding: 2rem 9%;
     background: var(--second-bg-color);
+    
 }
 
 .footer-icontop a {
@@ -664,8 +666,10 @@ footer {
     overflow: hidden;
 }
 
+
 .footer-text p {
     font-size: 1.6rem;
+    padding:auto;
 }
 
 .footer-icontop a i {
