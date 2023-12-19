@@ -40,10 +40,13 @@ header {
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--text-color);
     font-weight: 600;
+    font-family: 'Whisper', cursive;
 }
+
+
 
 .navbar a {
     font-size: 17px;
